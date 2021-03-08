@@ -4,6 +4,14 @@ This is a scaffolding for Katas in PHP.
 
 ## Setup
 
+Either create your own repo using this one as template:
+- https://github.com/Chemaclass/php-kata/generate
+
+Or cloning the repo and apply your code directly there:
+```
+git clone https://github.com/Chemaclass/php-kata
+```
+
 ### Some composer scripts
 
 ```bash
