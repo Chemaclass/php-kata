@@ -1,6 +1,6 @@
 # PHP Kata Scaffolding
 
-This is a scaffolding for Katas in PHP. 
+This is a basic scaffolding for Katas in PHP. 
 
 ## Setup
 
@@ -15,12 +15,9 @@ git clone https://github.com/Chemaclass/php-kata
 ### Some composer scripts
 
 ```bash
-composer test-all     # run test-quality & test-unit
-composer test-quality # run csrun & psalm
-composer test-unit    # run phpunit
-
-composer csrun  # check code style
-composer psalm  # run Psalm coverage
+composer test      # run psalm & test-unit
+composer psalm     # run Psalm coverage
+composer test-unit # run phpunit
 ```
 
 #### Extra

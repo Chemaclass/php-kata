@@ -1,13 +1,13 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Kata;
 
 final class KataLogic
 {
-    public function add(int ...$numbers): int
+    public function logic(): bool
     {
-        return array_sum($numbers);
+        return true;
     }
 }

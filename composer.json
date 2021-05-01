@@ -1,20 +1,16 @@
 {
+    "name": "chemaclass/php-kata",
     "description": "A basic PHP Kata Scaffolding",
     "type": "project",
     "license": "MIT",
-    "keywords": [
-        "php",
-        "katas",
-        "scaffolding"
-    ],
+    "keywords": ["php", "katas", "scaffolding"],
     "require": {
-        "php": ">=7.4"
+        "php": "^7.2|^8.0"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.2",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.3",
-        "friendsofphp/php-cs-fixer": "^2.18"
+        "vimeo/psalm": "^4.3"
     },
     "autoload": {
         "psr-4": {
@@ -27,18 +23,12 @@
         }
     },
     "scripts": {
-        "test-all": [
-            "@test-quality",
+        "test": [
+            "@psalm",
             "@test-unit"
         ],
-        "test-quality": [
-            "@csrun",
-            "@psalm"
-        ],
-        "test-unit": "./vendor/bin/phpunit",
-        "test-coverage": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage",
         "psalm": "./vendor/bin/psalm",
-        "csfix": "./vendor/bin/php-cs-fixer fix",
-        "csrun": "./vendor/bin/php-cs-fixer fix --dry-run"
+        "test-unit": "./vendor/bin/phpunit",
+        "test-coverage": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage"
     }
 }
